@@ -31,3 +31,7 @@ npm run dev
 ## Considerations made
 
 The Book Title was created with a button to keep the semantic meaning behind the intended action when the title is clicked. Making it a link was not feasable since the page doesn't go anywhere and making it just a hoverable text to be clicked did not feel like it calls the user's attention.
+
+## Rendering
+
+The application uses Next.js to utilize server-side rendering rather than CRA's client-side rendering.
