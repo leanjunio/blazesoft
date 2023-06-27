@@ -2,9 +2,7 @@
 
 ## **Requirements**
 
-1. `npm` for running the scripts
-
-2. Make sure that npm is installed
+1. `node` and `npm` are required to run the app and install dependencies
 
 ## **Getting Started**
 
