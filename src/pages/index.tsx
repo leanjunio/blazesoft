@@ -85,8 +85,8 @@ export default function Home() {
         <Modal
           open={isAdd}
           onClose={() => setIsAdd(false)}
-          aria-labelledby="modal-modal-title"
-          aria-describedby="modal-modal-description"
+          aria-labelledby="add book modal"
+          aria-describedby="this modal opens after the add button is clicked"
         >
           <AddBook onSubmit={onAdd} />
         </Modal>
@@ -94,8 +94,8 @@ export default function Home() {
           <Modal
             open={bookToEdit !== null}
             onClose={() => setBookToEdit(null)}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
+            aria-labelledby="edit book modal"
+            aria-describedby="this modal opens after the edit button is clicked"
           >
             <EditBook data={items[bookToEdit]} onSubmit={onEdit} />
           </Modal>
