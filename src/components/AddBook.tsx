@@ -90,7 +90,7 @@ export default function AddBook({ onSubmit }: AddBookProps) {
             variant="standard"
           />
         </Stack>
-        <Button type="submit" variant="outlined">
+        <Button sx={{ marginTop: "2em" }} type="submit" variant="outlined">
           Add
         </Button>
       </form>

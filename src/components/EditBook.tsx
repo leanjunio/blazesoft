@@ -93,7 +93,7 @@ export default function EditBook({ data, onSubmit }: EditBookProps) {
             variant="standard"
           />
         </Stack>
-        <Button type="submit" variant="outlined">
+        <Button sx={{ marginTop: "2em" }} type="submit" variant="outlined">
           Save
         </Button>
       </form>

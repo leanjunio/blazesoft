@@ -1,38 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Blazesoft Library
 
-## Getting Started
+## **Requirements**
 
-First, run the development server:
+1. `npm` for running the scripts
+
+2. Make sure that npm is installed
+
+## **Getting Started**
+
+### **Running the app locally**
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/leanjunio/blazesoft
+```
+
+2. Install the dependencies
+
+```bash
+npm install
+```
+
+3. Run on `dev` should start the `next dev` script
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Next.js should automatically open your default browser and navigation to [http://localhost:3000](http://localhost:3000) and render the 3 default books
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Considerations made
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The Book Title was created with a button to keep the semantic meaning behind the intended action when the title is clicked. Making it a link was not feasable since the page doesn't go anywhere and making it just a hoverable text to be clicked did not feel like it calls the user's attention.
