@@ -5,6 +5,7 @@ interface Item {
   name: string
   price: number
   category: string
+  description: string;
 }
 
 interface ItemsState {
@@ -16,17 +17,20 @@ const initialState: ItemsState = {
     {
       name: "Harry Potter",
       price: 19.99,
-      category: "Fiction"
+      category: "Fiction",
+      description: "The boy who lived."
     },
     {
       name: "Thinking Fast and Slow",
       price: 25.99,
-      category: "Self Help"
+      category: "Self Help",
+      description: "By Malcolm Gladwell"
     },
     {
       name: "Never Split The Difference",
       price: 12.99,
-      category: "Negotiation"
+      category: "Negotiation",
+      description: "By Chris Voss"
     },
   ],
 }
@@ -41,6 +45,9 @@ const itemsSlice = createSlice({
     removeItem: (state, action: PayloadAction<number>) => {
       state.items.splice(action.payload, 1)
     },
+    editItem: (state, action: PayloadAction<{ index: number, data: Item }>) => {
+      state.items[action.payload.index] = action.payload.data
+    }
   },
   extraReducers: {
     [HYDRATE]: (state, action: PayloadAction<ItemsState>) => {
@@ -53,7 +60,7 @@ const itemsSlice = createSlice({
   },
 })
 
-export const { addItem, removeItem } = itemsSlice.actions
+export const { addItem, removeItem, editItem } = itemsSlice.actions
 
 const store = configureStore({
   reducer: {
